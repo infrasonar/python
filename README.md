@@ -5,9 +5,11 @@ It is recommended to use a version tag when building probes or agent, so it is c
 Example Dockerfile
 
 ```Dockerfile
-FROM ghcr.io/infrasonar/python:3.12.9
+FROM ghcr.io/infrasonar/python:3.14.3
 ADD . /code
 WORKDIR /code
 RUN pip install --no-cache-dir -r requirements.txt
 CMD ["python", "main.py"]
 ```
+
+
